@@ -18,4 +18,4 @@ curl -X POST "http://localhost:8000/predict" -H "accept: application/json" -H "C
 curl -X POST "http://localhost:8000/predict" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"data\":0}"
 
 #### Get best 15 movies (running on Heroku)
-curl -X POST "https://fifth-fastapi2.herokuapp.com/predict" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"data\":0}"
+curl -X POST "https://fifth-fastapi2.herokuapp.com/predict" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"data\":20}"

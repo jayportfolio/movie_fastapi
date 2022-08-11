@@ -70,7 +70,7 @@ def get_movies(row_limit):
 
 @app.post("/predict", response_model=PredictResponse)
 def predict(input: PredictRequest):
-    row_limit = np.array(input.data)
+    row_limit = int(input.data)
     if debug:print('row_limit:', row_limit, type(row_limit))
 
     top15_array = get_movies(row_limit)
