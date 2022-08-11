@@ -3,6 +3,7 @@ uvicorn
 sklearn
 pydantic
 pandas
+gunicorn
 
 python-multipart
 pytest
